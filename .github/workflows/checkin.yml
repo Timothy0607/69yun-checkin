@@ -12,7 +12,7 @@ jobs:
   # 账号1 任务
   account1:
     runs-on: ubuntu-latest
-    # 只有到了 6:10 这个时间点，才会执行这个任务
+    # 只有到了 5:10 这个时间点，才会执行这个任务
     if: github.event.schedule == '10 21 * * *'
     steps:
       - uses: actions/checkout@v4
@@ -30,7 +30,7 @@ jobs:
   # 账号2 任务
   account2:
     runs-on: ubuntu-latest
-    # 只有到了 6:15 这个时间点，才会执行这个任务
+    # 只有到了 5:15 这个时间点，才会执行这个任务
     if: github.event.schedule == '15 21 * * *'
     steps:
       - uses: actions/checkout@v4
